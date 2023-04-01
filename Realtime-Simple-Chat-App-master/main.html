@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+</head>
+<style>
+ 
+ 
+  body{
+    background-image: url('img.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    
+}
+button{
+    border-radius: 50px;
+  position: relative;
+  top: 25vh;
+  left: 35vw;
+  height: 110px;
+  width: 340px;
+  background-color: #e46784;
+  font-weight: bold;
+  font-family: fantasy;
+  font-size: 56px;
+  color: black;
+  animation: butt 3s linear 3s infinite alternate-reverse ;
+}
+button:hover{
+  background-color:rgba(213, 221, 61, 0.695);
+  font-size: 65px;
+  width: 350px;
+  
+}
+header{
+  display: flex;
+  background-image: linear-gradient(rgba(241, 100, 199, 0.478), rgb(204, 134, 215),rgb(237, 128, 229));
+  padding: 35px;
+  justify-content: center;
+
+}
+div{
+  height: 35px;
+  width: fit-content;
+  font-size:20px;
+  font: bolder;
+  font-weight: bold;
+  font-family: cursive;
+  color: rgb(17, 18, 20);
+}
+@keyframes butt {
+  from{width:350px;}
+  to{width:400px}
+}
+
+
+
+  </style>
+<body>
+  <header>
+    <!-- <img src="img2.jpg" alt="appimg" style="position:relative; top:30px; height:50px; width:50px; right:30vh;"> -->
+    <div>
+    
+    Hi,Nice to see you here,Do you wanna group chat?<br>Don't worry you can chat with your friends here..</div></header>
+  <button><a style="color:black; text-decoration:none; "href="http://127.0.0.1:5555/Realtime-Simple-Chat-App-master/index.html">Lets Chat..</a></button>
+<div id="img"></div>
+</body>
+</html>

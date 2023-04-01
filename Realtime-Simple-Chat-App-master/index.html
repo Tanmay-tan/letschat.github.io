@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <script defer src="http://localhost:8093/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="server.js"></script>
+  <style>
+    body {
+      background-image: url("photo-1581116972164-b89ed0cdf64f.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+#main{
+  position:absolute;
+  top: 130px;
+  height:50vh;
+  max-height: 800px;
+  justify-content: center;
+  background-color:rgb(155, 214, 228);
+  border: 15px solid #a824d1;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 80vh;
+  overflow-y: scroll;
+  opacity: 0.8;
+}
+    #message-container {
+      display: grid;
+      width: 50%;
+      max-width: 800px;
+      background-color: #d38585b2;
+      position: relative;
+      top: 15%;
+      left: 145px;
+      gap: 15px;
+      opacity: 0.8;
+     
+    }
+
+    #message-container div {
+      background-color: #43cebb;
+      padding: 5px;
+      display: grid;
+      overflow: hidden;
+      flex: scroll;
+      font-weight: bold;
+
+    }
+
+    #message-container div:nth-child(2n) {
+      background-color: #dc446a;
+      
+    }
+
+    #send-container {
+      position: relative;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: rgb(239, 124, 124);
+      max-width: 800px;
+      width: 35%;
+      top: 76vh;
+      right: 55vh;
+      opacity: 0.7;
+      height: 0px;
+      font-weight: bold;
+    }
+
+
+    #message-input {
+      flex-grow: 1;
+      width: 450px;
+    }
+    header{
+      position: relative;
+      width: 50%;
+      display: flex;
+      top: 25px;
+      left: 30vh;
+      background-color:chartreuse;
+      font-size: x-large;
+      justify-content: center;
+      font-weight: bold;
+      font-family: cursive;
+      
+    }
+    form{
+      background-color: darkorange;
+    }
+  </style>
+</head>
+<body>
+  
+<header>Connect to Expand..
+  <script>{$name}</script> </header>
+<div id="main">
+  <div id="message-container"></div></div>
+  <form id="send-container">
+    <input type="text" id="message-input" style="font-weight:bold;">
+    <button type="submit" id="send-button">Send</button>
+  </form>
+
+
+</body>
+</html>
